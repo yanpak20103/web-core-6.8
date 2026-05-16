@@ -35,46 +35,46 @@ body {
     padding: 0 16px;
 }
 
-.header__logo1--value {
+.header__burger {
     width: 40px;
     height: 40px;
     flex-shrink: 0;
 }
 
-.header__logo4--value,
-.header__logo5--value {
+.header__repair-btn,
+.header__status-btn {
     width: 40px;
     margin-left: 10px;
     height: 40px;
     flex-shrink: 0;
 }
 
-.header__logo2--value {
+.header__logo {
     width: 96px;
     height: 50px;
     margin-right: auto;
     margin-left: 16px;
 }
 
-.header__logo3--value {
+.header__divider {
     width: 2px;
     height: 32px;
     margin-right: 16px;
 }
 
-.header__logo6--value {
+.header__profile {
     display: none;
 }
 
-.header__logo7--value {
+.header__chat {
     display: none;
 }
 
-.header__logo8--value {
+.header__call {
     display: none;
 }
 
-.header__logo9--value {
+.header__divider-right {
     display: none;
 }
 
@@ -90,14 +90,27 @@ body {
     margin-top: 24px;
 }
 
-.text__divider-low--value {
+.services__accent {
     width: 4px;
     height: 40px;
     background-color: #41F6D7;
     border-radius: 0 4px 4px 0;
 }
 
-.text__text1--value {
+.services__title {
+    margin-left: 12px;
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: bold;
+}
+
+.text__accent {
+    width: 4px;
+    height: 40px;
+    background-color: #41F6D7;
+    border-radius: 0 4px 4px 0;
+}
+
+.text__title {
     margin-left: 12px;
     font-size: clamp(28px, 4vw, 40px);
     font-weight: bold;
@@ -116,7 +129,7 @@ body {
     display: none;
 }
 
-.scroll-container__tab--value {
+.scroll-container__tab {
     padding: 10px 16px;
     background-color: #F8F8F8;
     border: 1px solid transparent;
@@ -129,7 +142,7 @@ body {
     transition: 0.2s;
 }
 
-.scroll-container__tab--value.active {
+.scroll-container__tab--active {
     background-color: #FFFFFF;
     border-color: #00ffbb;
 }
@@ -153,13 +166,13 @@ body {
     padding: 16px;
 }
 
-.arrow__down_arrow--value {
+.arrow__icon {
     width: 14px;
     height: 14px;
     margin-left: 10px;
 }
 
-.arrow__text3--value {
+.arrow__label {
     font-size: 16px;
     font-family: sans-serif;
 }
@@ -183,7 +196,7 @@ body {
     display: none;
 }
 
-/* Foundation of the tablet version */
+/* Tablet styles */
 
 @media (min-width: 769px) {
     .box-container {
@@ -194,16 +207,16 @@ body {
         padding: 0 24px;
     }
 
-    .header__logo6--value,
-    .header__logo7--value,
-    .header__logo8--value {
+    .header__profile,
+    .header__chat,
+    .header__call {
         display: block;
         width: 40px;
         height: 40px;
         flex-shrink: 0;
     }
 
-    .header__logo9--value {
+    .header__divider-right {
         display: block;
         width: 2px;
         height: 32px;
@@ -211,16 +224,16 @@ body {
         flex-shrink: 0;
     }
 
-    .header__logo2--value {
+    .header__logo {
         margin-right: auto;
     }
 
-    .header__logo8--value,
-    .header__logo7--value {
+    .header__call,
+    .header__chat {
         margin-right: 16px;
     }
 
-    .header__logo6--value {
+    .header__profile {
         margin-right: 20px;
     }
 
@@ -228,7 +241,7 @@ body {
         margin-top: 32px;
     }
 
-    .text__text1--value {
+    .text__title {
         font-size: clamp(32px, 4vw, 40px);
     }
 
@@ -236,7 +249,7 @@ body {
         padding: 32px 24px;
     }
 
-    .scroll-container__tab--value {
+    .scroll-container__tab {
         font-size: 15px;
     }
 
@@ -275,7 +288,7 @@ body {
         padding: 16px 0 0 0;
     }
 
-    .arrow__text3--value {
+    .arrow__label {
         margin-top: 0;
     }
 
@@ -299,25 +312,24 @@ body {
     .text4 {
         display: none;
     }
-
 }
 
-/* Foundation of the pc version */
+/* Desktop styles */
 
 @media (min-width: 1120px) {
-    .header__logo1--value,
-    .header__logo2--value,
-    .header__logo3--value,
-    .header__logo9--value,
-    .header__logo6--value,
-    .header__logo7--value,
-    .header__logo8--value,
-    .text__text1--value,
+    .header__burger,
+    .header__logo,
+    .header__divider,
+    .header__divider-right,
+    .header__profile,
+    .header__chat,
+    .header__call,
+    .text__title,
     .header,
     .main {
         display: none;
     }
-    
+
     .header-pc {
         display: flex;
         justify-content: space-between;
@@ -325,13 +337,13 @@ body {
         margin-right: 30px;
     }
 
-    .header-title{
+    .header-title {
         display: flex;
         align-items: center;
         margin-right: 10px;
     }
 
-    .header__logo4--value {
+    .header__repair-btn {
         margin-right: 30px;
     }
 
@@ -340,7 +352,7 @@ body {
         justify-content: flex-start;
     }
 
-    .text__divider-low--value {
+    .services__accent {
         display: flex;
         justify-content: flex-start;
         width: 2px;
@@ -363,7 +375,7 @@ body {
         font-weight: normal;
         font-size: clamp(14px, 1.7vw, 16px);
     }
-    
+
     .text3 {
         display: none;
     }
